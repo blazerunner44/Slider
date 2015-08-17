@@ -9,7 +9,7 @@ body{
 .slider-container{
 	width: 100%;
 	background-color: #02ABC1;
-	height: 300px;
+	/*height: 300px;*/
 	position: relative;
 }
 .slide{

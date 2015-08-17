@@ -5,19 +5,23 @@ $.fn.slider = function(){
 		container.children('div.slide').eq(current).hide().css('left', '100%');
 		container.children('div.slide').eq(next).show().animate({left: '0'});
 	}
+	//Define container
 	var container = this;
-	this.find('.slide').hide();
-	this.find('.slide:nth-of-type(1)').show();
-	this.append('<div class="forward arrow"> > </div>');
-	this.prepend('<div class="backward arrow"> < </div>');
-	this.children('.slide').eq(0).css('left', '0');
+	//Set min height
+	container.css('min-height', '300px');
+	container.find('.slide').hide();
+	container.find('.slide:nth-of-type(1)').show();
+	container.append('<div class="forward arrow"> > </div>');
+	container.prepend('<div class="backward arrow"> < </div>');
+	container.children('.slide').eq(0).css('left', '0');
+
 
 	// calculate top margin of arrows for vertical center
-	$('.arrow').css('margin-top', this.height()/2-100);
+	$('.arrow').css('margin-top', container.height()/2-100);
 
 	//process arrow click
 	var slide = 0;
-	var length = this.children('div.slide').length-1;
+	var length = container.children('div.slide').length-1;
 
 	$('.forward').click(function(){
 		//If only one slide, dont transition

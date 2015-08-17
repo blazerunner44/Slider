@@ -1,0 +1,38 @@
+.slider-container{
+	width: 100%;
+	background-color: #02ABC1;
+	height: 300px;
+	position: relative;
+}
+.slide{
+	color:white;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	text-align: center;
+	font-size: 36pt;
+	width: 80%;
+}
+.arrow{
+	color:white;
+	font-size: 72pt;
+	height:100px;
+	position: relative;
+	margin: auto;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.backward{
+	float:left;
+}
+.forward{
+	float:right;
+}

@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>CSS Slider</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- jQuery (required) -->
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<!-- slider plugin -->
+		<script type="text/javascript" src="../slider.jquery.js"></script>
+		<!-- Initialize plugin -->
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider-container').slider();
+		});
+		</script>
+	</head>
+
+	<body>
+		<div class="slider-container">
+			<div class="slide">
+				<h3>This is slide ONE</h3>
+			</div>
+
+			<div class="slide">
+				<h3>This is slide TWO</h3>
+			</div>
+
+			<div class="slide">
+				<h3>This is slide THREE</h3>
+			</div>
+		</div>
+	</body>
+</html>

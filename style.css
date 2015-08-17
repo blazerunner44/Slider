@@ -1,3 +1,11 @@
+body{
+	margin:0;
+	padding: 0;
+}
+.slider-container{
+	overflow-x:hidden;
+	margin:0;
+}
 .slider-container{
 	width: 100%;
 	background-color: #02ABC1;
@@ -8,10 +16,11 @@
 	color:white;
 	margin: auto;
 	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
+	top: 0; left: 100%; bottom: 0; right: 0;
 	text-align: center;
 	font-size: 36pt;
 	width: 80%;
+	text-shadow: 1px 1px 1px black;
 }
 .arrow{
 	color:white;
@@ -23,6 +32,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	text-shadow: 1px 1px 5px black;
 	cursor: pointer;
 	-moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -32,7 +42,9 @@
 }
 .backward{
 	float:left;
+	margin-left: 15px;
 }
 .forward{
 	float:right;
+	margin-right: 15px;
 }

@@ -9,6 +9,10 @@ To install the slider plugin, simply include the JavaScript file AFTER jQuery
 
 `<script type="text/javascript" src="slider.jquery.js"></script>`
 
+You should also include the CSS file. Feel free to change the styles as you see fit.
+
+`<link rel="stylesheet" type="text/css" href="style.css">`
+
 To initialize the slider plugin, simply call the function on the container div you want to transform into a slider
 
 ```
@@ -28,3 +32,8 @@ To initialize the slider plugin, simply call the function on the container div y
 ```
 		
 `$('.slider-container').slider();`
+
+Make sure that all of your slide divs have a class of slide. 
+
+#Demo
+You can see the contents of the example folder live at http://blazerunner44.me/slider

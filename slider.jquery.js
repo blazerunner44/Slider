@@ -20,6 +20,10 @@ $.fn.slider = function(){
 	var length = this.children('div.slide').length-1;
 
 	$('.forward').click(function(){
+		//If only one slide, dont transition
+		if(length == 0){
+			return;
+		}
 		if(slide >= length){
 			transition(slide, 0);
 			slide = 0;
@@ -30,6 +34,10 @@ $.fn.slider = function(){
 	});
 
 	$('.backward').click(function(){
+		//If only one slide, don't transition
+		if(length == 0){
+			return;
+		}
 		if(slide <= 0){
 			transition(slide, length);
 			slide = length;

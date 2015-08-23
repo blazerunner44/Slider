@@ -36,4 +36,4 @@ To initialize the slider plugin, simply call the function on the container div y
 Make sure that all of your slide divs have a class of slide. 
 
 #Demo
-You can see the contents of the example folder live at http://blazerunner44.me/slider
+You can see the contents of the example folder live at http://blazerunner44.me/github/slider
